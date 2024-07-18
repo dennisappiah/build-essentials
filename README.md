@@ -1,0 +1,1 @@
+Essential commands used for my linux basic environment set-up
