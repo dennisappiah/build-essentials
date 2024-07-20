@@ -17,3 +17,7 @@ export PS1="\[\033[01;32m\](\u)\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\] "
 
 ZSH:
 export PS1="%F{green}(%n)%f ➜ %F{blue}%c%f "
+
+# Pycharm installation
+sudo tar xzf pycharm-*.tar.gz -C /opt/
+sudo ln -s /opt/pycharm-*/bin/pycharm.sh /usr/local/bin/pycharm
