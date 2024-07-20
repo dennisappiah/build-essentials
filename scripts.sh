@@ -21,3 +21,6 @@ export PS1="%F{green}(%n)%f ➜ %F{blue}%c%f "
 # Pycharm installation
 sudo tar xzf pycharm-*.tar.gz -C /opt/
 sudo ln -s /opt/pycharm-*/bin/pycharm.sh /usr/local/bin/pycharm
+sudo apt-get install libxrender1
+sudo apt-get install libxext6 libxi6 libxrender1 libxtst6 libfreetype6
+
