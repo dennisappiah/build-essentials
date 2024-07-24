@@ -37,5 +37,7 @@ openssl pkcs8 -topk8 -inform PEM -outform PEM -nocrypt -in keypair.pem -out priv
 echo $PATH | tr ':' '\n'
 
 
-npm install typescript @types/node @types/express @types/mongoose
+npm install  @types/node @types/express @types/mongoose
+npm install ts-node typescript --save-dev
+tsc-init 
 
