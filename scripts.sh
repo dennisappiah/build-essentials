@@ -40,4 +40,4 @@ echo $PATH | tr ':' '\n'
 npm install  @types/node @types/express @types/mongoose
 npm install ts-node typescript --save-dev
 tsc-init 
-
+DB=mongodb+srv:<username>//:<password>@cluster0.1jpowym.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
