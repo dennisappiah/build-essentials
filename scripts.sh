@@ -48,3 +48,4 @@ npm i -g @nestjs/cli
 
 # new project
 nest new
+nest g co
