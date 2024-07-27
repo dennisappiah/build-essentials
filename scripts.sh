@@ -36,8 +36,15 @@ openssl pkcs8 -topk8 -inform PEM -outform PEM -nocrypt -in keypair.pem -out priv
 
 echo $PATH | tr ':' '\n'
 
-
+#express mongo db setup
 npm install  @types/node @types/express @types/mongoose
 npm install ts-node typescript --save-dev
 tsc-init 
 DB=mongodb+srv:<username>//:<password>@cluster0.1jpowym.mongodb.net/<Databasename>?retryWrites=true&w=majority&appName=Cluster0
+
+#nestjs
+#-- nest cli
+npm i -g @nestjs/cli
+
+# new project
+nest new
