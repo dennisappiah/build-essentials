@@ -49,3 +49,6 @@ npm i -g @nestjs/cli
 # new project
 nest new
 nest g co
+nest g s
+nest g module
+nest g class coffees/dto/create-coffee.dto --no-spec
