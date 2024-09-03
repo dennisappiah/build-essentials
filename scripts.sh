@@ -52,3 +52,10 @@ nest g co
 nest g s
 nest g module
 nest g class coffees/dto/create-coffee.dto --no-spec
+
+
+# nextjs + payload CMS
+Database: *mongodb, postgres
+s3 object storage: linode, AWS s3, *Supabase s3 storage
+deployment: *vercel
+
