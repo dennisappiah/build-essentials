@@ -59,3 +59,26 @@ Database: *mongodb, postgres
 s3 object storage: linode, AWS s3, *Supabase s3 storage
 deployment: *vercel
 
+
+ DO $$
+DECLARE
+    r RECORD;
+BEGIN
+    FOR r IN (SELECT tablename FROM pg_tables WHERE schemaname = 'public') LOOP
+        EXECUTE 'DROP TABLE IF EXISTS public."' || r.tablename || '" CASCADE';
+    END LOOP;
+END $$;
+
+
+CREATE TABLE temporary_absentees (
+    id BIGSERIAL PRIMARY KEY,
+    absent_count VARCHAR(255) NOT NULL,
+    hasEmigrants VARCHAR(3) NOT NULL CHECK (hasEmigrants IN ('Yes', 'No')),
+    household_id BIGINT,
+    FOREIGN KEY (household_id) REFERENCES household_rosters(id)
+);
+
+
+ docker exec -it 3db31125d48c psql -U root -d census-db
+
+
